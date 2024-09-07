@@ -1,0 +1,65 @@
+body{
+    background-image: url("image/bk5.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    padding-top: 100px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+label{
+    font-size: x-large;
+    margin-right: 10px;
+    color: white;
+}
+input{
+    height: 24px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 150px;
+}
+button{
+    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+    border: none;
+    color: white;
+    background-color: rgb(21, 99, 124);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+button:hover{
+    background-color: rgb(13, 160, 209);
+}
+button:active{
+    background-color: white;
+    color:rgb(21, 99, 124);
+    border-color: rgb(21, 99, 124);
+}
+h1, h3{
+    color: white;
+}
+#dice_result{
+    margin: 40px;
+    color: white;
+    font-size:x-large;
+}
+#img_dice{
+    align-items: center;
+}
+#img_dice img{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
