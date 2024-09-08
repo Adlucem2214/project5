@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="images/vid1.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+        <div class="content">
+            <h1>Generate Random Password</h1>
+    
+            <div id="showpassword" class="digital-dice">Password</div>
+            <div class="btns">
+                <button id="clearbutton" type="button" class="digital-button">Clear</button>
+                <button id="submitbutton" type="submit" class="digital-button" >Generate</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="pass.js"></script>
+</body>
+</html>

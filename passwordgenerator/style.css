@@ -1,0 +1,131 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+body {
+    background-image: url('path-to-your-gif.gif');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.video-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+#showpassword{
+    margin: 50px;
+}
+h1{
+    font-size: 54px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 48px;
+    color: #00d0ff; /* Neon blue to match the buttons */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00d0ff, 0 0 20px #00d0ff; /* Glow effect */
+    letter-spacing: 3px; /* Adds space between letters for a futuristic look */
+    background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background to improve readability */
+    padding: 10px 20px;
+    border-radius: 5px; /* Soften the edges */
+    display: inline-block;
+    margin-top: 20px;
+}
+.digital-button {
+    background-color: black; /* Dark background to match */
+    color: #00d0ff; /* Neon blue text to match the 0s and 1s */
+    border: 2px solid #00d0ff; /* Neon blue border */
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace; /* Tech-style font */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00d0ff, 0 0 20px #00d0ff; /* Glowing effect */
+    border-radius: 10px;
+  }
+  
+  /* Hover effect for the button */
+  .digital-button:hover {
+    background-color: #00d0ff; /* Neon blue background */
+    color: black; /* Text changes to black */
+    box-shadow: 0 0 20px #00d0ff, 0 0 30px #00d0ff; /* More intense glow */
+  }
+  
+  /* Button focus and active states */
+  .digital-button:focus, .digital-button:active {
+    outline: none;
+    background-color: #008bbd; /* Slightly darker blue when clicked */
+    box-shadow: 0 0 15px #00d0ff;
+  }
+  .digital-dice {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: #00d0ff; /* Neon blue text */
+    border: 2px solid #00d0ff; /* Neon blue border */
+    padding: 20px 50px;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace; /* Tech-style font */
+    text-transform: uppercase;
+    letter-spacing: 5px; /* Spacing between password characters */
+    display: inline-block;
+    border-radius: 10px; /* Rounded corners for dice look */
+    margin: 20px 0;
+    position: relative;
+    backdrop-filter: blur(10px); /* Adds blur effect */
+    box-shadow: 0 0 30px rgba(0, 208, 255, 0.8), 
+                0 0 60px rgba(0, 208, 255, 0.4); /* Glowing effect */
+    transition: all 0.3s ease;
+  }
+  
+  /* Smoky Effect: Using a pseudo-element for the smoke-like visual */
+  .digital-dice::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    background: radial-gradient(rgba(0, 0, 0, 0.5), transparent); /* Smoke effect */
+    border-radius: 15px; /* Matches the border radius of the main element */
+    opacity: 0.7; /* Slightly transparent */
+    filter: blur(20px); /* Creates the smoky blur */
+    z-index: -1;
+  }
+  
+  /* Hover effect for enhanced glow */
+  .digital-dice:hover {
+    box-shadow: 0 0 40px rgba(0, 208, 255, 0.9), 
+                0 0 70px rgba(0, 208, 255, 0.6); /* Brighter glow on hover */
+  }
+  .btns{
+    display: flex;
+    flex-direction: row;
+  }
+  button{
+    margin: 20px;
+  }
