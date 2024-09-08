@@ -44,65 +44,65 @@ h1{
     font-size: 54px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 48px;
-    color: #00d0ff; /* Neon blue to match the buttons */
+    color: #00d0ff; 
     text-align: center;
     margin-bottom: 20px;
-    text-shadow: 0 0 10px #00d0ff, 0 0 20px #00d0ff; /* Glow effect */
-    letter-spacing: 3px; /* Adds space between letters for a futuristic look */
-    background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background to improve readability */
+    text-shadow: 0 0 10px #00d0ff, 0 0 20px #00d0ff; 
+    letter-spacing: 3px;
+    background: rgba(0, 0, 0, 0.5); 
     padding: 10px 20px;
-    border-radius: 5px; /* Soften the edges */
+    border-radius: 5px; 
     display: inline-block;
     margin-top: 20px;
 }
 .digital-button {
-    background-color: black; /* Dark background to match */
-    color: #00d0ff; /* Neon blue text to match the 0s and 1s */
-    border: 2px solid #00d0ff; /* Neon blue border */
+    background-color: black; 
+    color: #00d0ff; 
+    border: 2px solid #00d0ff; 
     padding: 15px 30px;
     font-size: 1.5rem;
-    font-family: 'Courier New', Courier, monospace; /* Tech-style font */
+    font-family: 'Courier New', Courier, monospace; 
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 0 10px #00d0ff, 0 0 20px #00d0ff; /* Glowing effect */
+    box-shadow: 0 0 10px #00d0ff, 0 0 20px #00d0ff; 
     border-radius: 10px;
   }
   
-  /* Hover effect for the button */
+ 
   .digital-button:hover {
-    background-color: #00d0ff; /* Neon blue background */
-    color: black; /* Text changes to black */
-    box-shadow: 0 0 20px #00d0ff, 0 0 30px #00d0ff; /* More intense glow */
+    background-color: #00d0ff; 
+    color: black; 
+    box-shadow: 0 0 20px #00d0ff, 0 0 30px #00d0ff; 
   }
   
-  /* Button focus and active states */
+ 
   .digital-button:focus, .digital-button:active {
     outline: none;
-    background-color: #008bbd; /* Slightly darker blue when clicked */
+    background-color: #008bbd; 
     box-shadow: 0 0 15px #00d0ff;
   }
   .digital-dice {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    color: #00d0ff; /* Neon blue text */
-    border: 2px solid #00d0ff; /* Neon blue border */
+    background: rgba(0, 0, 0, 0.5);
+    color: #00d0ff;
+    border: 2px solid #00d0ff; 
     padding: 20px 50px;
     font-size: 2rem;
-    font-family: 'Courier New', Courier, monospace; /* Tech-style font */
+    font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
-    letter-spacing: 5px; /* Spacing between password characters */
+    letter-spacing: 5px;
     display: inline-block;
-    border-radius: 10px; /* Rounded corners for dice look */
+    border-radius: 10px; 
     margin: 20px 0;
     position: relative;
-    backdrop-filter: blur(10px); /* Adds blur effect */
+    backdrop-filter: blur(10px); 
     box-shadow: 0 0 30px rgba(0, 208, 255, 0.8), 
-                0 0 60px rgba(0, 208, 255, 0.4); /* Glowing effect */
+                0 0 60px rgba(0, 208, 255, 0.4); 
     transition: all 0.3s ease;
   }
   
-  /* Smoky Effect: Using a pseudo-element for the smoke-like visual */
+
   .digital-dice::before {
     content: '';
     position: absolute;
@@ -110,17 +110,17 @@ h1{
     left: -20px;
     width: calc(100% + 40px);
     height: calc(100% + 40px);
-    background: radial-gradient(rgba(0, 0, 0, 0.5), transparent); /* Smoke effect */
-    border-radius: 15px; /* Matches the border radius of the main element */
-    opacity: 0.7; /* Slightly transparent */
-    filter: blur(20px); /* Creates the smoky blur */
+    background: radial-gradient(rgba(0, 0, 0, 0.5), transparent); 
+    border-radius: 15px;
+    opacity: 0.7; 
+    filter: blur(20px); 
     z-index: -1;
   }
   
-  /* Hover effect for enhanced glow */
+  
   .digital-dice:hover {
     box-shadow: 0 0 40px rgba(0, 208, 255, 0.9), 
-                0 0 70px rgba(0, 208, 255, 0.6); /* Brighter glow on hover */
+                0 0 70px rgba(0, 208, 255, 0.6); 
   }
   .btns{
     display: flex;
